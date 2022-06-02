@@ -50,4 +50,278 @@ public class EmpresaController {
         return ResponseEntity.ok(empresaDAO.findAll().stream().map(e -> e.getCnpj()).collect(Collectors.toList()));
     }
 
-}
+    @GetMapping("/comprexidade")
+    public boolean complexidadeCiclomatica(){
+
+      List<Empresa> empresas = empresaDAO.findAll();
+
+      boolean teste = false;
+
+            if(empresas.size() == 1)
+                teste = true;
+        
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+                
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+                
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+               
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+                
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+               
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+                
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+                
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            if(empresas.size() == 1)
+                teste = true;
+
+            return teste;
+    }
+
+    }
