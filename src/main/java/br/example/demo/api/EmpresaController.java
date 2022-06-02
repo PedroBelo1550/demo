@@ -50,7 +50,7 @@ public class EmpresaController {
         return ResponseEntity.ok(empresaDAO.findAll().stream().map(e -> e.getCnpj()).collect(Collectors.toList()));
     }
 
-    @GetMapping("/comprexidade")
+    @GetMapping("/complexidade")
     public boolean complexidadeCiclomatica(){
 
       List<Empresa> empresas = empresaDAO.findAll();
