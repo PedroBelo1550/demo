@@ -2,8 +2,14 @@ package br.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@ComponentScan({"br.example.demo.api", "br.example.demo.service","br.example.demo.domain"})
+@EntityScan({"br.example.demo.service.model"})
+@EnableJpaRepositories(basePackages = {"br.example.demo.service.interfaces"})
 public class DemoApplication {
 
 	public static void main(String[] args) {
