@@ -4,16 +4,18 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EnderecoRepository extends JpaRepository<EnderecoRepository, Long> {
+import br.example.demo.service.model.Endereco;
+
+public interface EnderecoRepository extends JpaRepository<Endereco, Long> {
 
     @Override
-    default List<EnderecoRepository> findAll() {
+    default List<Endereco> findAll() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    default EnderecoRepository getById(Long id) {
+    default Endereco getById(Long id) {
         // TODO Auto-generated method stub
         return null;
     }
@@ -25,7 +27,7 @@ public interface EnderecoRepository extends JpaRepository<EnderecoRepository, Lo
     }
 
     @Override
-    default <S extends EnderecoRepository> S save(S entity) {
+    default <S extends Endereco> S save(S entity) {
         // TODO Auto-generated method stub
         return null;
     }
