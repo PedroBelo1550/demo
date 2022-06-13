@@ -1,33 +1,34 @@
 package br.example.demo.service.interfaces;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.example.demo.service.model.Empresa;
+import br.example.demo.service.model.Fornecedor;
 
-public interface EmpresaRepository extends JpaRepository<Empresa, String> {
+public interface FornecedorRepository extends JpaRepository<Fornecedor, String> {
 
     @Override
-    default List<Empresa> findAll() {
+    default List<Fornecedor> findAll() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    default Empresa getById(String id) {
+    default Fornecedor getById(String id) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    default void deleteById(String id) {
+    default Optional<Fornecedor> findById(String id) {
         // TODO Auto-generated method stub
-        
+        return null;
     }
 
     @Override
-    default <S extends Empresa> S save(S entity) {
+    default <S extends Fornecedor> S save(S entity) {
         // TODO Auto-generated method stub
         return null;
     }

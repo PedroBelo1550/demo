@@ -17,7 +17,6 @@ public class EmpresaDAO {
         this.empresaRepository = empresaRepository;
     }
 
-    
     public Empresa save(Empresa e){
       return  empresaRepository.save(e);
     }
@@ -29,8 +28,4 @@ public class EmpresaDAO {
     public void delete(String id){
        empresaRepository.deleteById(id);
     }
-
-    
-
-
 }
