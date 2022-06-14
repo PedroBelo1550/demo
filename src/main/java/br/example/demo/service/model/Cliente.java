@@ -1,9 +1,12 @@
 package br.example.demo.service.model;
 
+import java.sql.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -13,11 +16,12 @@ import javax.persistence.Table;
 @Table(name = "clientes")
 public class Cliente {
 
+    @Id
     private String cpfCnpj;
     private String nome;
-    private String dtIniRelacionamento;
+    private Date dtIniRelacionamento;
 
-    @OneToOne
+    @OneToOne(cascade=CascadeType.PERSIST)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
@@ -49,11 +53,11 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getDtIniRelacionamento() {
+    public Date getDtIniRelacionamento() {
         return dtIniRelacionamento;
     }
 
-    public void setDtIniRelacionamento(String dtIniRelacionamento) {
+    public void setDtIniRelacionamento(Date dtIniRelacionamento) {
         this.dtIniRelacionamento = dtIniRelacionamento;
     }
 

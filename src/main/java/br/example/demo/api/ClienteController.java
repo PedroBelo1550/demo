@@ -25,13 +25,11 @@ public class ClienteController {
         this.clienteDAO = clienteDAO;
     }
 
-
-    
     @GetMapping("/index")
     public String index(Model model){
 
         model.addAttribute("cliente", new Cliente());
-        return "clienteForm";
+        return "clientesForm";
     }
 
     @GetMapping("/add")

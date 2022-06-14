@@ -2,6 +2,7 @@ package br.example.demo.service.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -19,7 +20,7 @@ public class Fornecedor {
 
     private String nome;
 
-    @OneToOne
+    @OneToOne(cascade=CascadeType.PERSIST)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 

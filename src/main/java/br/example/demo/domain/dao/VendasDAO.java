@@ -2,9 +2,12 @@ package br.example.demo.domain.dao;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import br.example.demo.service.interfaces.VendasRepository;
 import br.example.demo.service.model.Vendas;
 
+@Repository
 public class VendasDAO {
     
     private final VendasRepository vendasRepository;
