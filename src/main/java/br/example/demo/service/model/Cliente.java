@@ -12,11 +12,14 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.br.CNPJ;
+
 @Entity
 @Table(name = "clientes")
 public class Cliente {
 
     @Id
+    @CNPJ
     private String cpfCnpj;
     private String nome;
     private Date dtIniRelacionamento;

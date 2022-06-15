@@ -6,6 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindException;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,8 +39,11 @@ public class ClienteController {
 
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.OK)
-    public String add(@Validated Cliente cliente, @Validated Endereco endereco){
+    public String add(@Validated Cliente cliente, @Validated Endereco endereco, BindingResult result) throws BindException{
 
+        if (result.hasErrors()) {
+            throw new BindException(result);
+        }
 
         System.out.println(endereco.getMunicipio());
         cliente.setEndereco(endereco);
