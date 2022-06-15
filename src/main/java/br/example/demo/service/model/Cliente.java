@@ -21,7 +21,7 @@ public class Cliente {
     private String nome;
     private Date dtIniRelacionamento;
 
-    @OneToOne(cascade=CascadeType.PERSIST)
+    @OneToOne(cascade=CascadeType.MERGE)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 

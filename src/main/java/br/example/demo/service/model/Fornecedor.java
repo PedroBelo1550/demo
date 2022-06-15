@@ -20,7 +20,7 @@ public class Fornecedor {
 
     private String nome;
 
-    @OneToOne(cascade=CascadeType.PERSIST)
+    @OneToOne(cascade=CascadeType.MERGE)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 

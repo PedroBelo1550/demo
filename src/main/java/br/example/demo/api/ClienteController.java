@@ -8,11 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import br.example.demo.domain.dao.ClienteDAO;
 import br.example.demo.service.model.Cliente;
+import br.example.demo.service.model.Endereco;
 
 @Controller
 @RequestMapping("cliente/")
@@ -29,13 +31,21 @@ public class ClienteController {
     public String index(Model model){
 
         model.addAttribute("cliente", new Cliente());
+        model.addAttribute("endereco", new Endereco());
         return "clientesForm";
     }
 
-    @GetMapping("/add")
+    @PostMapping("/add")
     @ResponseStatus(HttpStatus.OK)
-    public void add(@Validated Cliente cliente){
+    public String add(@Validated Cliente cliente, @Validated Endereco endereco){
+
+
+        System.out.println(endereco.getMunicipio());
+        cliente.setEndereco(endereco);
+
         clienteDAO.save(cliente);
+
+        return "clientesForm";
     }
 
     @GetMapping("/list")
